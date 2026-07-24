@@ -1,0 +1,131 @@
+/* ---------- Theme Variables ---------- */
+:root {
+  --bg-main: #000000;
+  --bg-panel: #111111;
+  --bg-panel-alt: #141414;
+  --border: #222222;
+  --text-main: #e6e6e6;
+  --accent: #00c26e;
+  --accent-hover: #00e084;
+}
+
+/* ---------- Base ---------- */
+body {
+  margin: 0;
+  background: var(--bg-main);
+  color: var(--text-main);
+  font-family: system-ui, sans-serif;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 28px;
+  padding: 30px;
+}
+
+/* ---------- Controls Panel ---------- */
+#controls {
+  text-align: center;
+  background: var(--bg-panel);
+  padding: 24px;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 480px;
+}
+
+#controls h1 {
+  margin: 0 0 20px 0;
+  font-size: 28px;
+  color: var(--accent);
+}
+
+.input-row,
+.action-row {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+input {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--bg-panel-alt);
+  color: var(--text-main);
+  width: 60%;
+}
+
+button {
+  padding: 12px 18px;
+  border-radius: 8px;
+  border: none;
+  background: var(--accent);
+  color: #000;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button:hover {
+  background: var(--accent-hover);
+}
+
+/* ---------- Wheel Area ---------- */
+#wheel-area {
+  background: var(--bg-panel);
+  padding: 20px;
+  border-radius: 12px;
+}
+
+/* ---------- Collapsible Items Panel ---------- */
+#items-panel {
+  width: 90%;
+  max-width: 480px;
+  text-align: center;
+}
+
+#toggleItems {
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+/* Collapsible container */
+#itemsContainer {
+  background: var(--bg-panel);
+  border-radius: 12px;
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  transition: max-height 0.35s ease, opacity 0.35s ease;
+  padding: 0 20px;
+}
+
+/* Items grid */
+#itemsList {
+  display: grid;
+  gap: 12px;
+  padding: 20px 0;
+}
+
+.item-row {
+  display: flex;
+  justify-content: space-between;
+  background: var(--bg-panel-alt);
+  padding: 12px;
+  border-radius: 8px;
+}
+
+.item-row input {
+  width: 70%;
+}
+
+.item-row button {
+  background: #c20000;
+  color: #fff;
+}
+
+.item-row button:hover {
+  background: #e00000;
+}

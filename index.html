@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Wheel Works</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="app">
+
+    <!-- Controls Panel -->
+    <section id="controls">
+      <h1>Wheel Works</h1>
+
+      <div class="input-row">
+        <input id="itemInput" type="text" placeholder="Add a topic...">
+        <button id="addBtn">Add</button>
+      </div>
+
+      <div class="action-row">
+        <button id="spinBtn">Spin</button>
+        <button id="resetBtn">Reset</button>
+      </div>
+    </section>
+
+    <!-- Wheel Area -->
+    <section id="wheel-area">
+      <canvas id="wheelCanvas" width="380" height="380"></canvas>
+    </section>
+
+    <!-- Collapsible Items Panel -->
+    <section id="items-panel">
+      <button id="toggleItems">Show Items</button>
+
+      <div id="itemsContainer">
+        <div id="itemsList"></div>
+      </div>
+    </section>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
