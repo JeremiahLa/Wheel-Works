@@ -38,3 +38,19 @@ This project is ideal for:
 
 ## 📁 Project Structure
 
+
+---
+
+## 🚀 How It Works
+
+### 1. Item Management
+Users can add items through an input field. Each item is stored as an object:
+
+```js
+{
+  id: "itm_123456789",
+  name: "Example Item",
+  created: 123456789
+}
+
+wheelworks_items
